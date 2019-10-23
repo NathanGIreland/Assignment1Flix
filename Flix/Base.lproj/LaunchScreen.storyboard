@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,19 +15,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="zOB-26-1s3">
-                                <rect key="frame" x="107" y="384" width="200" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="zOB-26-1s3">
+                                <rect key="frame" x="138" y="378.66666666666669" width="138" height="139.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="Ybp-Qb-fc5"/>
+                                    <constraint firstAttribute="width" constant="138" id="eqZ-eU-nRe"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLIX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIa-Uk-eCM">
-                                <rect key="frame" x="144" y="520" width="126" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLIX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIa-Uk-eCM">
+                                <rect key="frame" x="134" y="534.66666666666663" width="146" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Gk7-iG-oyj"/>
+                                    <constraint firstAttribute="width" constant="146" id="bpG-kl-fMh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oIa-Uk-eCM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="110" id="W8c-zC-v3h"/>
+                            <constraint firstItem="zOB-26-1s3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eWe-Sw-co5"/>
+                            <constraint firstItem="oIa-Uk-eCM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ljp-wW-klc"/>
+                            <constraint firstItem="zOB-26-1s3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vYK-9Y-zgj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
